@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+//    var obj = {
+//        a:1,
+//        b:function () {
+//            console.log(this.a)
+//        }
+//    }
+//    var a=2;
+//    var objb = obj.b;
+//    obj.b();
+//    objb();
+//    obj.b.call(window);
+    var a=1;
+    function b() {
+        var a=2;
+        function c() {
+            console.log(a)
+        }
+        return c;
+    }
+    b();
+</script>
+</html>
